@@ -2,12 +2,8 @@ export default function Footer() {
     return (
       <footer className="bg-gray-800 text-white p-4 mt-6">
         <div className="container mx-auto text-center">
-          <p className="mb-2">© {new Date().getFullYear()} Your News App. All rights reserved.</p>
-          <div className="flex justify-center space-x-4 mb-2">
-            <a href="/about" className="text-gray-400 hover:text-white">About Us</a>
-            <a href="/terms" className="text-gray-400 hover:text-white">Terms of Service</a>
-            <a href="/privacy" className="text-gray-400 hover:text-white">Privacy Policy</a>
-          </div>
+          <p className="mb-2">© {new Date().getFullYear()} News Aggregator. All rights reserved.</p>
+          <p className="text-xl  mb-2">Follow Us</p>
           <div className="flex justify-center space-x-4">
             <a href="https://github.com/kubsamelkamu"  target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
               Github
