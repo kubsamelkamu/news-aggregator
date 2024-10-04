@@ -6,9 +6,14 @@ export async function getStaticProps() {
   const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
   
   let articles = [];
+  
   try {
     const response = await axios.get(url);
-    articles = response.data.articles;
+    if (response?.data?.articles) {
+      articles = response.data.articles;
+    } else {
+      console.error('No articles found in the response');
+    }
   } catch (error) {
     console.error('Error fetching news:', error);
   }
@@ -22,6 +27,14 @@ export async function getStaticProps() {
 }
 
 export default function HomePage({ articles }) {
+  if (!articles || articles.length === 0) {
+    return (
+      <div className="container mx-auto p-4">
+        <h1 className="text-3xl font-bold mb-4">No Articles Found</h1>
+      </div>
+    );
+  }
+
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-4">Top Headlines</h1>
@@ -29,16 +42,25 @@ export default function HomePage({ articles }) {
         {articles.map((article, index) => (
           <div key={index} className="border rounded-lg p-4 shadow-lg">
             <h2 className="text-xl font-semibold">{article.title}</h2>
-            {article.urlToImage && <img src={article.urlToImage} alt={article.title} className="w-full h-40 object-cover rounded mt-2" />}
+            {article.urlToImage && (
+              <img
+                src={article.urlToImage}
+                alt={article.title}
+                className="w-full h-40 object-cover rounded mt-2"
+              />
+            )}
             <p className="mt-2">{article.description}</p>
-            <a href={article.url} className="text-blue-500 mt-4 block" target="_blank" rel="noopener noreferrer">
-              Read More 
+            <a
+              href={article.url}
+              className="text-blue-500 mt-4 block"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read More
             </a>
-          </div> 
+          </div>
         ))}
       </div>
     </div>
   );
 }
-
-
