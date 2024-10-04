@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header className="bg-blue-600 p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-white text-2xl font-bold">
+        <h1 className="text-white text-2xl font-bold hover:underline">
           <Link href="/">News Aggregator</Link>
         </h1>
         <button
@@ -35,50 +35,50 @@ export default function Header() {
           </svg>
         </button>
         <nav className="hidden md:flex space-x-4">
-          <Link href="/Search" className="text-white">
+          <Link href="/Search" className="text-white hover:underline">
             Search
           </Link> 
-          <Link href="/category/technology" className="text-white">
+          <Link href="/category/technology" className="text-white hover:underline">
             Technology
           </Link>
-          <Link href="/category/sports" className="text-white">
+          <Link href="/category/sports" className="text-white hover:underline">
             Sports
           </Link>
-          <Link href="/category/health" className="text-white">
+          <Link href="/category/health" className="text-white hover:underline">
             Health
           </Link>
-          <Link href="/category/business" className="text-white">
+          <Link href="/category/business" className="text-white hover:underline">
             Business
           </Link>
-          <Link href="/category/science" className="text-white">
+          <Link href="/category/science" className="text-white hover:underline">
             Science
           </Link>
-          <Link href="/category/entertainment" className="text-white">
+          <Link href="/category/entertainment" className="text-white hover:underline">
             Entertainment
           </Link>
         </nav>
       </div>
       {isMenuOpen && (
         <nav className="md:hidden bg-blue-700 p-4">
-          <Link href="/search" className="block text-white mb-2">
+          <Link href="/search" className="block text-white mb-2 hover:underline">
             Search
           </Link> 
-          <Link href="/category/technology" className="block text-white mb-2">
+          <Link href="/category/technology" className="block text-white mb-2 hover:underline">
             Technology
           </Link>
-          <Link href="/category/sports" className="block text-white mb-2">
+          <Link href="/category/sports" className="block text-white mb-2 hover:underline">
             Sports
           </Link>
-          <Link href="/category/health" className="block text-white mb-2">
+          <Link href="/category/health" className="block text-white mb-2 hover:underline">
             Health
           </Link>
-          <Link href="/category/business" className="block text-white mb-2">
+          <Link href="/category/business" className="block text-white mb-2 hover:underline">
             Business
           </Link>
-          <Link href="/category/science" className="block text-white mb-2">
+          <Link href="/category/science" className="block text-white mb-2 hover:underline">
             Science
           </Link>
-          <Link href="/category/entertainment" className="block text-white mb-2">
+          <Link href="/category/entertainment" className="block text-white mb-2 hover:underline">
             Entertainment
           </Link>
         </nav>
