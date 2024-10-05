@@ -38,3 +38,9 @@ The project utilizes the following technologies:
 - **Axios**: A promise-based HTTP client for making requests to external APIs like the NewsAPI.
 - **NewsAPI**: The external news service used to fetch the latest news headlines and articles.
 - **Vercel**: A cloud platform used for deploying the Next.js application with seamless integration.
+
+
+### See Live Demo:
+ `[Live Demo](https://news-aggregators-39vdmszvg-kubsa-s-projects.vercel.app/)` in the README file.
+
+
