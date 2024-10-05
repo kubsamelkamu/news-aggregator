@@ -3,7 +3,7 @@ import axios from 'axios';
 import Head from 'next/head';
 
 export async function getStaticProps() {
-  const apiKey = process.env.NEWS_API_KEY;
+  const apiKey = process.env.NEXT_PUBLIC_NEWS_API_KEY;
   const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
   
   let articles = [];
