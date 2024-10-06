@@ -40,7 +40,7 @@ The project utilizes the following technologies:
 - **Vercel**: A cloud platform used for deploying the Next.js application with seamless integration.
 
 
-## See Live Demo:
+## See Live:
 [Live Demo](https://news-aggregators-39vdmszvg-kubsa-s-projects.vercel.app/)
 
 
