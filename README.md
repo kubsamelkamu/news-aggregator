@@ -23,7 +23,7 @@ The app features a user-friendly interface with infinite scroll for the search r
 
    ```bash
    git clone https://github.com/kubsamelkamu/news-aggregator.git
-   cd YOUR_REPOSITORY
+   cd news-aggregator
 2. Install Dependencies:
    npm install
 3. Run the development server:
