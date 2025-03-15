@@ -1,11 +1,5 @@
 # News Aggregator
 
-## Overview
-
-This is a **Next.js** news aggregator application that allows users to search for news articles from various sources in real-time. The app fetches top headlines and allows users to search for specific news topics using the **NewsAPI**. 
-
-The app features a user-friendly interface with infinite scroll for the search results, error handling, and responsive design.
-
 ## Features
 
 - **Top Headlines**: Displays top news headlines upon visiting the homepage.
@@ -22,8 +16,8 @@ The app features a user-friendly interface with infinite scroll for the search r
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/kubsamelkamu/news-aggregator.git
-   cd news-aggregator
+   git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+   cd YOUR_REPOSITORY
 2. Install Dependencies:
    npm install
 3. Run the development server:
