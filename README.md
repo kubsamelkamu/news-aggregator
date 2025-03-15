@@ -41,7 +41,7 @@ The project utilizes the following technologies:
 
 
 ## See Live Demo:
-[Live Demo](https://news-aggregators-39vdmszvg-kubsa-s-projects.vercel.app/)
+[Live Demo](https://news-aggregator-beige.vercel.app/)
 
 
 
