@@ -35,9 +35,7 @@ export default function Header() {
           </svg>
         </button>
         <nav className="hidden md:flex space-x-4">
-          <Link href="/Search" className="text-white hover:underline">
-            Search
-          </Link> 
+
           <Link href="/category/technology" className="text-white hover:underline">
             Technology
           </Link>
@@ -60,9 +58,7 @@ export default function Header() {
       </div>
       {isMenuOpen && (
         <nav className="md:hidden bg-blue-700 p-4">
-          <Link href="/search" className="block text-white mb-2 hover:underline">
-            Search
-          </Link> 
+ 
           <Link href="/category/technology" className="block text-white mb-2 hover:underline">
             Technology
           </Link>
