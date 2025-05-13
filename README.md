@@ -15,9 +15,6 @@
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-   cd YOUR_REPOSITORY
 2. Install Dependencies:
    npm install
 3. Run the development server:
@@ -31,7 +28,7 @@ The project utilizes the following technologies:
 - **Tailwind CSS**: A utility-first CSS framework that allows rapid custom UI development without writing custom CSS.
 - **Axios**: A promise-based HTTP client for making requests to external APIs like the NewsAPI.
 - **NewsAPI**: The external news service used to fetch the latest news headlines and articles.
-- **Vercel**: A cloud platform used for deploying the Next.js application with seamless integration.
+
 
 
 ## See Live Demo:
